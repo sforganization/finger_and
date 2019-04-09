@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TryingWearActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/try_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/background"/>
+
+        <ProgressBar
+            android:id="@+id/try_process_bar"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:clickable="false"
+            android:indeterminateDrawable="@drawable/loading"
+            app:layout_constraintBottom_toBottomOf="@+id/try_top_circle"
+            app:layout_constraintEnd_toEndOf="@+id/try_cicle"
+            app:layout_constraintStart_toStartOf="@+id/try_cicle"
+            app:layout_constraintTop_toTopOf="@+id/try_bottom_circle" />
+
+        <Button
+            android:id="@+id/try_return"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/return_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/try_cicle"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="@+id/try_trun_moto_button"
+            app:layout_constraintEnd_toEndOf="@+id/try_open_lock_button"
+            app:layout_constraintStart_toStartOf="@+id/try_open_lock_button"
+            app:layout_constraintTop_toTopOf="@+id/try_open_lock_button" />
+
+        <Button
+            android:id="@+id/try_open_lock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="590dp"
+            android:layout_marginStart="590dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/open_lock_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/try_trun_moto_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trun_moto"
+            android:visibility="invisible"
+            android:layout_marginLeft="590dp"
+            android:layout_marginStart="590dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/try_open_lock_button"/>
+
+        <Button
+            android:id="@+id/try_top_circle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_circle"
+            android:textColor="#FF0B03"
+            android:textSize="32sp"
+            android:clickable="false"
+            app:layout_constraintStart_toStartOf="@+id/try_trun_moto_button"
+            app:layout_constraintTop_toTopOf="@+id/try_trun_moto_button" />
+
+        <Button
+            android:id="@+id/try_bottom_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_circle"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:textColor="#FF0B03"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/try_open_lock_button"
+            app:layout_constraintStart_toStartOf="@+id/try_open_lock_button" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
